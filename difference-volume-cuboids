@@ -5,6 +5,7 @@ For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of 
 Your function will be tested with pre-made examples as well as random ones.
 
 Solution no. 1:
+
 function findDifference(a, b) {
   let cub1 = a.reduce((acc,c) => acc * c)
   let cub2 = b.reduce((acc,c) => acc * c)
@@ -12,6 +13,7 @@ function findDifference(a, b) {
 }
 
 Solution no. 2:
+
 function find_difference(a, b) {
   return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
 }
