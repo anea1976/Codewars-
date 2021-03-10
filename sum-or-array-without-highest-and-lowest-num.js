@@ -12,7 +12,7 @@ Example:
 If array is empty, null or None, or if only 1 Element exists, return 0.
 Note: In C++ instead null an empty vector is used.In C there is no null. ; -)
 
-Solution:
+SOLUTION:
 function sumArray(array) {
     if (array === null || array.length === 0 || array.length === 1) {
         return 0
