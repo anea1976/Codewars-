@@ -3,6 +3,10 @@ Complete the function that takes a list of numbers(nums), as the only argument t
 
 The list will never be empty and will only contain values that are greater than or equal to zero.
 
+
 Good luck!
+
+Solution:
+
 const sumSquareEvenRootOdd = ns => Number(ns.map(
     x => x % 2 === 0 ? x ** 2 : Math.sqrt(x)).reduce((acc, c) => acc + c, 0).toFixed(2))
