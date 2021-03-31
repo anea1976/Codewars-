@@ -12,7 +12,9 @@
 // howManyLightsabersDoYouOwn("Zach") === 18
 // howManyLightsabersDoYouOwn() === 0
 
-SOLUTION:
+SOLUTION 1:
 function howManyLightsabersDoYouOwn(name) {
     return name === 'Zach'? 18: 0;
   }
+  SOLUTION 2:
+  let howManyLightsabersDoYouOwn = name => name == "Zach" ? 18 : 0;
