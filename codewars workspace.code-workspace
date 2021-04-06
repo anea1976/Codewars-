@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\todo-list-express-main"
+		},
+		{
+			"path": "..\\crud-app"
+		}
+	],
+	"settings": {}
+}
