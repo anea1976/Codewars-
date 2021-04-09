@@ -8,7 +8,12 @@
 		},
 		{
 			"path": "..\\crud-app"
+		},
+		{
+			"path": "..\\my-todo-list-app"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"terminal.integrated.fontSize": 17
+	}
 }
