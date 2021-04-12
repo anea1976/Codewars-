@@ -1,7 +1,7 @@
-CODEWARS 8KYU UNFINISHED LOOP- BUG FIXING #1
-INSTRUCTIONS:
-Unfinished Loop - Bug Fixing #1
-Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his unfinished for loop!
+// CODEWARS 8KYU UNFINISHED LOOP- BUG FIXING #1
+// INSTRUCTIONS:
+// Unfinished Loop - Bug Fixing #1
+// Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his unfinished for loop!
 
 SOLUTION:
 function createArray(number){
