@@ -8,3 +8,6 @@
 function greet(name){
     return `Hello, ${name} how are you doing today?`
   }
+
+  //Arrow function solution:
+  const greet=n=>`Hello, ${n} how are you doing today?`;
