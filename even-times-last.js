@@ -29,5 +29,5 @@ const evenLast = ( arr ) =>
       arr.filter((e,i) => i % 2 === 0).reduce((a, b) => a + b, 0) * arr[arr.length-1] || 0
 
     //   SOLUTION 3:
-    
+    const evenLast = n => n.reduce((p, c, i) => i % 2 ? p : p + c, 0) * n[n.length - 1] || 0
 
