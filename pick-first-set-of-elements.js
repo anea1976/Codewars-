@@ -17,7 +17,7 @@ function first(arr, n) {
     return n===0 ? [] : n > 1 ? arr.slice(0, n) : [arr[0]];
   }
 
-  //SOLUTION :
+  //SOLUTION 2 :
   function first(arr, n=1) {
     return arr.slice(0,n);
  }
