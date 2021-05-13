@@ -28,7 +28,7 @@ function findSenior(list) {
     return list.filter(dev => dev.age === maxAge)
      
    }
-   //SOLUTION 2:
+   //SOLUTION 2:  
 
    const findSenior = list =>
   list.filter(val => val.age === Math.max(...list.map(val => val.age)));
