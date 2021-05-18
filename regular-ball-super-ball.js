@@ -21,6 +21,6 @@ class Ball  {
    };
 
    //SOLUTION 2:
-   var Ball = function(ballType = "regular") {
+   let Ball = function(ballType = "regular") {
     this.ballType = ballType;
   };
