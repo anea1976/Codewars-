@@ -8,6 +8,6 @@
 // FUNDAMENTALS
 
 // SOLUTION:
-function evensAndOdds(num){
-	return num % 2 === 0 ? num.toString(2): num.toString(16);
+function evensAndOdds(n){
+	return n % 2 === 0 ? n.toString(2): n.toString(16);
 }
