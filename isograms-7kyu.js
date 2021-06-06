@@ -20,6 +20,10 @@ function isIsogram(str){
   }
 
 //   SOLUTION WITH REGEX:
+//\w matches any word character (equivalent to [a-zA-Z0-9_])
+// . matches any character (except for line terminators)
+// * matches the previous token between zero and unlimited times, as many times as possible, giving back as needed (greedy)
+// \1 matches the same text as most recently matched by the 1st capturing group
 
 function isIsogram(str){ 
     return !/(\w).*\1/i.test(str)
