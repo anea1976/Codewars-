@@ -16,3 +16,5 @@ function correctTail(bod, tail) {
     return bod.slice(-1) === tail;
   }
 
+  //SOLUTION FROM OTHERS:
+  const correctTail = (x,y)=>x.endsWith(y)
