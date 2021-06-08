@@ -14,3 +14,21 @@
 // Assertion messages may be unclear about what they display in some languages. If you read "...It Should encode XXX", the "XXX" is the expected result, not the input!
 
 // FUNDAMENTALS STRINGS ARRAYS
+
+//SOLUTION
+function duplicateEncode(word){
+    let str = word.toLowerCase().split("")
+    return str.map(x => str.indexOf(x) === str.lastIndexOf(x) ? "(" : ")" ).join("")
+}
+
+//OTHER SOLUTION
+
+function duplicateEncode(word){
+    return word
+      .toLowerCase()
+      .split('')
+      .map( function (a, i, w) {
+        return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'
+      })
+      .join('');
+  }
