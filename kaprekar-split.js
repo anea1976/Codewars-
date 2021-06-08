@@ -36,3 +36,7 @@ function kaprekarSplit(n){
    return -1 ;  
     
   }
+
+  //CLEVER SOLUTION:
+  const kaprekarSplit = n =>
+  (n * n + '').split('').findIndex((_, i, a) => +a.slice(0, i).join('') + +a.slice(i).join('') == n);
