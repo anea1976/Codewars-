@@ -20,3 +20,8 @@
 function isDivideBy(number, a, b) {
     return number % a === 0 && number % b === 0 
   }
+
+  //CLEVER SOLUTIONS:
+  function isDivideBy(number, a, b) {
+    return (number%a + number%b) === 0
+  }
