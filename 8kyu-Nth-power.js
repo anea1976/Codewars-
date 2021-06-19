@@ -14,4 +14,8 @@ function index(array, n){
     return !array[n]? -1 :(array[n])**n;
     }
 
+    // OTHER SOLUTIONS
+
+    const index = (array, n) => array.length > n ? Math.pow(array[n], n) :-1;
+
     
