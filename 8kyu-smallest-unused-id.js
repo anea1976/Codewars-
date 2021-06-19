@@ -31,3 +31,10 @@ function nextId(ids){
         }
         return ids.length;
       }
+
+
+      function nextId(ids){
+        for(id = 0;;id++) {
+          if (!ids.includes(id)) return id;
+        }
+      }
