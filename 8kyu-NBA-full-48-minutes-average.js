@@ -18,3 +18,5 @@
 function pointsPer48(ppg, mpg) {
     return ppg ? Number(((48*ppg)/mpg).toFixed(1)) : 0;  
 }
+
+const pointsPer48 = (ppg, mpg) => mpg ? +(ppg*48/mpg).toFixed(1) : 0;
