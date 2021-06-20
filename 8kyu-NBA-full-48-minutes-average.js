@@ -15,3 +15,6 @@
 // Follow your dreams!
 
 // SOLUTION:
+function pointsPer48(ppg, mpg) {
+    return ppg ? Number(((48*ppg)/mpg).toFixed(1)) : 0;  
+}
