@@ -20,8 +20,13 @@
 // +9 dog years for second year
 // +5 dog years for each year after that
 
+// SOLUTION:
+var humanYearsCatYearsDogYears = function (humanYears) {
+    let catYearsMoreThanTwo = Math.abs(humanYears - 2) * 4 + 24;
+    let dogYearsMoreThanTwo = Math.abs(humanYears - 2) * 5 + 24;
 
+    return humanYears === 1 ? [humanYears, 15, 15] :
+        humanYears === 2 ? [humanYears, 24, 24] :
+            [humanYears, catYearsMoreThanTwo, dogYearsMoreThanTwo]
 
-
-
-// SOLUTION
+}
