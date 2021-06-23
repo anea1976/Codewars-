@@ -17,8 +17,22 @@
 
 // SOLUTIONS:
 function i(word) {
-    if (/^[a-zI]/.test(word) || word.replace(/[^aeiou]/ig,'').length*2>=word.length) return 'Invalid word';
+    //^[a-zI]: ^ matches beginning of the word
+    // [a-zI]: matches any lowercase letter at the beginning of the word and also capital I at the beginning of the word
+    if (/^[a-zI]/.test(word) || word.replace(/[^aeiou]/ig,'').length * 2>=word.length) return 'Invalid word';
     return 'i'+word;
   }
 
- 
+  function i(word) {
+    let vowels = Array.from(word.toLowerCase())
+        .filter(letter => 'aeiou'.includes(letter)).length
+    let consonants = Array.from(word.toLowerCase())
+        .filter(letter => 'bcdfghjklmnpqrstvwxyz'.includes(letter)).length
+
+    if (word.slice(0,1).toLowerCase() === 'i' ||
+        word.slice(0,1).toLowerCase() === word.slice(0,1) ||
+        vowels >= consonants) {
+        return("Invalid word")
+    }
+    else {return('i'+word)}
+}
