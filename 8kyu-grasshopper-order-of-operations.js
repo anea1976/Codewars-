@@ -6,4 +6,6 @@
 // FUNDAMENTALS VARIABLES BASIC LANGUAGE FEATURES
 
 //SOLUTION:
-
+function orderOperations () {
+  return (2 + 2) * (2  + 2) * 2
+}
