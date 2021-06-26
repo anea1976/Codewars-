@@ -17,3 +17,8 @@ function toBinary(n){
     return +n.toString(2);
   }
 
+//   OTHER SOLUTIONS:
+var toBinary = (n) =>{
+  return Number(n.toString(2))
+}
+
