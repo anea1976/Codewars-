@@ -64,5 +64,11 @@ function guessGifts(wishlist, presents) {
   });
   return r;
 }
+const guessGifts = (wishlist, presents) =>  
+wishlist.filter(e=> presents.some(x=> x.size == e.size && 
+                                      x.clatters == e.clatters && 
+                                      x.weight == e.weight))
+        .map(e=> e.name);
+
 
 
