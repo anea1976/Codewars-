@@ -33,3 +33,17 @@
 
 // guessGifts(wishlist, presents); // must return ["Toy Car", "Mini Puzzle"]
 
+//SOLUTION:
+function guessGifts(wishlist, presents) {
+  let finalArr = []
+  for(let i=0; i<wishlist.length;i++){
+    for(let j=0; j<presents.length; j++){
+      if(wishlist[i].size===presents[j].size && wishlist[i].clatters===presents[j].clatters && wishlist[i].weight===presents[j].weight){
+        finalArr.push(wishlist[i].name)
+      }
+    }
+    
+  }
+  return [...new Set(finalArr)]
+}
+
