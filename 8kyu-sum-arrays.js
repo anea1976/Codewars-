@@ -22,3 +22,8 @@
 
 // FUNDAMENTALSLOOPSCONTROL FLOWBASIC LANGUAGE FEATURESARRAYS
 
+//SOLUTION:
+function sum (numbers) {  
+    return numbers.reduce((a,b)=> a + b, 0);   
+    
+};
