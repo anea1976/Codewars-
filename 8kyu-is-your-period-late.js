@@ -13,7 +13,6 @@
 // Return true if the number of days passed from last to today is greater than cycleLength. Otherwise, return false.
 
 // FUNDAMENTALS
-
 //SOLUTION:
 let milliSecsDay = 1000 * 60 * 60 *24;
 
@@ -21,3 +20,4 @@ function periodIsLate(last, today, cycleLength)
 {
   return Math.floor((today-last)/ milliSecsDay) > cycleLength? true: false;
 }
+
