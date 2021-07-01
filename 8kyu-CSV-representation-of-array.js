@@ -22,4 +22,6 @@
 // FUNDAMENTALS ARRAYS BASIC LANGUAGE FEATURES
 
 // SOLUTION:
-
+function toCsvText(array) {
+    return array.join('\n')
+ }
