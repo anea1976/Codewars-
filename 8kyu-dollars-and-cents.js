@@ -17,3 +17,8 @@
 function formatMoney(amount){
     return `$${amount.toFixed(2)}`
   }
+
+  //OTHER SOLUTIONS:
+  function formatMoney(amount){
+    return '$' + amount.toFixed(2);
+  }
