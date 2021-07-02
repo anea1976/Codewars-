@@ -13,3 +13,7 @@
 // 3.1 needs to become $3.10
 // Good luck! Your team knows they can count on you!
 
+// SOLUTION:
+function formatMoney(amount){
+    return `$${amount.toFixed(2)}`
+  }
