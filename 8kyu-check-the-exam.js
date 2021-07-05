@@ -27,3 +27,7 @@ function checkExam(array1, array2) {
     }
      return score < 0 ? 0: score;
    }
+
+//    CLEVER SOLUTIONS BY OTHERS:
+
+checkExam = (array1, array2) => (array1 = array2.reduce((acc, curr, i) => acc + (curr === array1[i] ? 4 : curr === '' ? 0 : -1), 0)) > 0 ? array1 : 0;
