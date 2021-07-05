@@ -11,9 +11,4 @@
 // hello          => "Hello, World!" # name not given
 // hello ""       => "Hello, World!" # name is an empty String
 // FUNDAMENTALS
-// SOLUTION :
-function hello(name) {
-    return `Hello, ${name ? name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() : "World"}!`
-  }
 
- 
