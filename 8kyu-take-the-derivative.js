@@ -18,6 +18,6 @@
 // FUNDAMENTALS
 
 // SOLUTION:
-function derive(coefficient,exponent) {
-  return `${coefficient * exponent}x^${exponent - 1}`
+function derive(coeff,exponent) {
+  return `${coeff * exponent}x^${exponent - 1}`
 }
