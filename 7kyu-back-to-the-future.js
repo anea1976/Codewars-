@@ -21,5 +21,23 @@
 
 // If there are two possible return dates, return the soonest.
 
-// FUNDAMENTALSCONTROL FLOW
+// FUNDAMENTALS CONTROL FLOW
 
+// SOLUTION:
+function backToTheFuture(str) {
+  let departureMonth= str.split(' ').pop()
+  let departureDate = str.split(' ')[1]
+  let dayOfWeek = str.split(' ').shift()
+  
+    return departureMonth === 'January'?
+      `I'm leaving here on ${dayOfWeek} ${departureDate} October!`:
+       departureMonth === 'April'? 
+      `I'm leaving here on ${dayOfWeek} ${departureDate} July!`:
+       departureMonth === 'September'? 
+      `I'm leaving here on ${dayOfWeek} ${departureDate} December!`:
+       departureMonth === 'February'? 
+      `I'm leaving here on ${dayOfWeek} ${departureDate} March!`:
+       departureMonth === 'March'&& departureDate < 31? 
+      `I'm leaving here on ${dayOfWeek} ${departureDate} November!`:
+       "Doc, I can't get back to the future!";
+  }
