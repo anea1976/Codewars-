@@ -31,3 +31,6 @@ function checkExam(array1, array2) {
 //    CLEVER SOLUTIONS BY OTHERS:
 //With reduce() method
 checkExam = (array1, array2) => (array1 = array2.reduce((acc, curr, i) => acc + (curr === array1[i] ? 4 : curr === '' ? 0 : -1), 0)) > 0 ? array1 : 0;
+
+const checkExam = (array1, array2) =>
+  Math.max(array2.reduce((pre, val, idx) => val ? val === array1[idx] ? pre + 4 : --pre : pre, 0), 0);
