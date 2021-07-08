@@ -7,17 +7,16 @@
 // Requirements
 
 // SOLUTION
-
 function isPrime(num) {
 
-    // Any number less than 2 or not an integer is not  prime.
+    // Any number less than 2 or negative or not an integer is not  prime.
     if (num < 2 || num != Math.round(num)) {return false}
     
  
-    // Set  num to prime from outset and prove whether or not it is.
+    // Set  num to prime from outset and prove whether or not it is prime.
     let isPrime = true;
  
-    //Loop from 2 to the square root of n. If num divides exactly by any i, then num is not prime.
+    //Loop from 2 to the square root of num. If num divides exactly by any i, then num is not prime.
     for (let i = 2; i <= Math.sqrt(num); i++) {
        if (num % i == 0) {isPrime = false}
     }
