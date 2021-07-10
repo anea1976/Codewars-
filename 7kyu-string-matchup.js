@@ -23,4 +23,9 @@
 // ALGORITHMS
 
 
+// SOLUTION:
+
+const solve =(arr1,arr2) => arr2.map(a=> arr1.filter(e=> e===a).length)
+
+
 
