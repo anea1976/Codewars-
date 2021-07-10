@@ -70,6 +70,9 @@ function comp(array1, array2) {
   return array1.map(v => v * v).every((v, i) => v == array2[i]);
 }
 
-x
+
+function comp(a, b) {
+  return !!a && !!b && a.map(x => x*x).sort().join() == b.sort().join();
+}
 
 
