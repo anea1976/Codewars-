@@ -31,6 +31,20 @@ const solve =(arr1,arr2) => arr2.map(a=> arr1.filter(e=> e===a).length)
 function solve(a, b) {
     return b.map(x => a.reduce((n, y) => x === y ? n + 1 : n, 0))
   }
-
+  function solve(a,b){
+    let arrResult = [];
+    let cont = 0;
+    for (let i = 0; i < b.length; i++){
+      for (let j = 0; j < a.length; j++){
+        if (b[i] === a [j]){
+          cont++;
+        }
+      }
+      arrResult.push(cont);
+      cont = 0;
+    }
+    
+    return arrResult;
+  }
   
 
