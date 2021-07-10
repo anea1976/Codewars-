@@ -27,5 +27,10 @@
 
 const solve =(arr1,arr2) => arr2.map(a=> arr1.filter(e=> e===a).length)
 
+//OTHER SOLUTIONS:
+function solve(a, b) {
+    return b.map(x => a.reduce((n, y) => x === y ? n + 1 : n, 0))
+  }
 
+  
 
