@@ -10,6 +10,7 @@
 
 // twoSum [1, 2, 3] 4 === (0, 2)
 // SOLUTION:
+//1)
 function twoSum(numbers, target) {
     for (let i=0; i< numbers.length; i++){
       for(let j=i+1; j< numbers.length;j++){
@@ -20,3 +21,5 @@ function twoSum(numbers, target) {
     }
     
   }
+
+  
