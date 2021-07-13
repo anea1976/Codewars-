@@ -17,3 +17,12 @@
 // Simple time difference
 
 // Simple remove duplicates
+//SOLUTIONS
+//1)
+
+function solve(s){
+  let upperArr = [...s].filter(el=> el === el.toUpperCase())
+ 
+ return s.length === upperArr.length*2 || s.length - upperArr.length > upperArr.length? s.toLowerCase(): s.toUpperCase(); 
+}
+
