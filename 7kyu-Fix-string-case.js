@@ -33,6 +33,12 @@ function solve(s){
   return (upper > lower) ? s.toUpperCase() : s.toLowerCase() 
 }
 
+// 3)
+
+function solve(s){
+  return s.replace(/[a-z]/g,'').length>s.length/2 ? s.toUpperCase() : s.toLowerCase()
+}
+
 
 
 
