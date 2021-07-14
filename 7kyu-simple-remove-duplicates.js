@@ -25,3 +25,16 @@ function solve(arr){
   return arr.reduceRight((acc, cv)=> {return acc.includes(cv)? acc:[...acc, cv]}, []).reverse()
     }
 
+//3)
+function solve (arr){
+  let obj = {};
+    arr.map(x => {
+      obj[arr.lastIndexOf(x)] = x;
+       });
+  let result = Object.keys(obj);
+    return result.map(key=>obj[key]);
+            
+      }
+  
+  
+  
