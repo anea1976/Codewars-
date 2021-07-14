@@ -9,4 +9,15 @@
 
 // Good luck!
 
+// SOLUTIONS:
+//1)
+function solve(arr){  
+  //copy the array using slice() and then reverse the copy  
+  let newArr = arr.slice().reverse()
+  //use Set() to remove duplicates from the copy
+  let removedDubs = new Set(newArr)
+  //use the spread operator to convert the Set() object back to an array 
+  //reverse the array
+ return [...removedDubs].reverse()
+}
 
