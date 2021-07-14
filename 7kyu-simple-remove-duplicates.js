@@ -36,5 +36,10 @@ function solve (arr){
             
       }
   
+  //OThERS  SOLUTIONS
+  
+  //4)
+  const solve = arr =>
+  arr.filter((val, idx) => idx === arr.lastIndexOf(val));
   
   
