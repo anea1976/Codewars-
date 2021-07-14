@@ -42,4 +42,13 @@ function solve (arr){
   const solve = arr =>
   arr.filter((val, idx) => idx === arr.lastIndexOf(val));
   
+  // 5)
+  function solve(arr){
+    let obj = {};
+    arr.map(x => {
+      obj[arr.lastIndexOf(x)] = x;
+    });
+    let result = Object.values(obj);
+    return result;
+  }
   
