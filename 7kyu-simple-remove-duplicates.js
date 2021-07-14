@@ -20,4 +20,8 @@ function solve(arr){
   //reverse the array
  return [...removedDubs].reverse()
 }
+//2)
+function solve(arr){
+  return arr.reduceRight((acc, cv)=> {return acc.includes(cv)? acc:[...acc, cv]}, []).reverse()
+    }
 
