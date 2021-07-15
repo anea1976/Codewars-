@@ -32,3 +32,8 @@ function toCamelCase(str){
 function toCamelCase(str){
   return str.replace(/(_|-)./g, m => m.substr(1, 1).toUpperCase());
 }
+
+//3)
+function toCamelCase(str){
+  return str.replace(/[_-]\w/gi, ch => ch[1].toUpperCase());
+} 
