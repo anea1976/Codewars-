@@ -16,3 +16,14 @@ String.prototype.camelCase=function(str){
 }
 
 
+//   2)
+
+String.prototype.camelCase = function() {
+  if (typeof this !== 'string' || !this.length) return '';
+  
+  return this
+    .trim()
+    .split(' ')
+    .map(w => `${w[0].toUpperCase()}${w.toLowerCase().slice(1)}`)
+    .join('');
+}
