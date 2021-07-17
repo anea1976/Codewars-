@@ -29,3 +29,10 @@ function odd(num){
   return !even(num)
 }
 
+// 3)
+
+function findOutlier(int){
+  var evens=[],odds=[];
+  int.forEach(function(num){num% 2 !=0? odds.push(num):evens.push(num) });
+  return odds.length>1? evens[0]: odds[0];
+  }
