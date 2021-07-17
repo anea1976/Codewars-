@@ -9,3 +9,11 @@
 // Should return: 160 (the only even number)
 // ALGORITHMS
 
+//SOLUTIONS:
+//1)
+function findOutlier(integers){
+  let evenArr = integers.filter(x => x % 2 === 0 )
+  let oddArr = integers.filter(x => x % 2  !== 0)
+  return oddArr.length === 1? oddArr[0] : evenArr[0];
+}
+
