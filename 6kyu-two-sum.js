@@ -22,4 +22,8 @@ function twoSum(numbers, target) {
     
   }
 
-  
+  const twoSum = (n, t) => n.reduce((acc, curr, idx) => {
+    let result = n.indexOf(t - curr, idx + 1);
+    if (result >= 0) acc.push(idx, result);
+    return acc;
+  }, []); 
