@@ -15,6 +15,19 @@
 // FUNDAMENTALS
 
 //SOLUTION:
+String.prototype.toAlternatingCase = function() {
+    var changedCase = "";
+    
+    for (i = 0; i < this.length; i++) {
+      if (this[i] === this[i].toLowerCase()) {
+        changedCase += this[i].toUpperCase();
+      } else {
+        changedCase += this[i].toLowerCase();
+      }
+    }
+    
+    return changedCase;
+  }
 
 
 
