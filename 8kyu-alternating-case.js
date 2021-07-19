@@ -14,9 +14,11 @@
 
 // FUNDAMENTALS
 
-//SOLUTION:
+//SOLUTIONS:
+
+// 1)
 String.prototype.toAlternatingCase = function() {
-    var changedCase = "";
+    let changedCase = "";
     
     for (i = 0; i < this.length; i++) {
       if (this[i] === this[i].toLowerCase()) {
@@ -28,6 +30,10 @@ String.prototype.toAlternatingCase = function() {
     
     return changedCase;
   }
+// 2)
+  String.prototype.toAlternatingCase = function () {
+    return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+}
 
 
 
