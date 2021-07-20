@@ -12,4 +12,14 @@ function removeConsecutiveDuplicates(s) {
   return s.split(' ').filter((el, i, arr) =>  el !== arr[i+1] ).join(' ')
 }
 
-
+//2)
+const removeConsecutiveDuplicates = s =>{
+  const removed = [];
+  s = s.split(' ');
+  for (let i = 1; i <= s.length; i++){
+    if (s[i] !== s[i-1]){
+      removed.push(s[i-1])
+    }
+  }
+  return removed.join(' ')
+}
