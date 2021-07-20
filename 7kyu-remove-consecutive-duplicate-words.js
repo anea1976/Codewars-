@@ -7,3 +7,9 @@
 // --> "alpha beta gamma delta alpha beta gamma delta" 
 
 // SOLUTIONS:
+//1)
+function removeConsecutiveDuplicates(s) { 
+  return s.split(' ').filter((el, i, arr) =>  el !== arr[i+1] ).join(' ')
+}
+
+
