@@ -18,5 +18,10 @@
 function shortenToDate(longDate) {
     return longDate.split(",")[0];
   }
+//2)
 
+function shortenToDate(longDate) {
+    const [date, time] = longDate.split(',');
+    return date;
+  }
 
