@@ -16,3 +16,7 @@
 // 0 <= m <= 59
 // 0 <= s <= 59
 
+//SOLUTION
+function past(h, m, s){
+    return ((h*3600+m*60+s)*1000)
+  }
