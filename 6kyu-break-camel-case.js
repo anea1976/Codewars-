@@ -19,4 +19,8 @@ const solution = string => {
   }).join('');
 }
 
+// 3)
 
+function solution(string) {
+  return string.replace(/[A-Z]/g, val => ' ' + val)
+}
