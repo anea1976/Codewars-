@@ -8,3 +8,8 @@
 // Hello, Mr. Spock
 // FUNDAMENTALS
 
+
+//SOLUTION:
+function sayHello(name) {
+    return `Hello, ${name}`
+  }
