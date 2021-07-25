@@ -5,3 +5,10 @@
 
 // FUNDAMENTALS NUMBERS
 
+//SOLUTION:
+//1)
+function parseF(s) {
+  return /[a-z]/gi.test(s) ? null: parseFloat(s);
+}
+
+
