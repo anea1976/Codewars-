@@ -12,4 +12,11 @@ function pigIt(str){
   return str.split(' ').map(word =>  word.match(/[.,:!?]/)? word : word.slice(1) + word.slice(0,1) + 'ay').join(' ')
 }
 
+//2)
+function pigIt(str) {
+  return str.replace(/\w+/g, (w) => {
+    return w.slice(1) + w[0] + 'ay';
+  });
+}
+
 
