@@ -7,4 +7,3 @@
 // pigIt('Hello world !');     // elloHay orldway !
 
 
-// SOLUTIONS:
