@@ -6,4 +6,10 @@
 // pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
 // pigIt('Hello world !');     // elloHay orldway !
 
+// SOLUTIONS:
+//1)
+function pigIt(str){
+  return str.split(' ').map(word =>  word.match(/[.,:!?]/)? word : word.slice(1) + word.slice(0,1) + 'ay').join(' ')
+}
+
 
