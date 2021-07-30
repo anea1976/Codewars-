@@ -16,3 +16,10 @@
 
 // Vowel consonant lexicon
 
+//SOLUTIONS 
+
+//1)
+function dup(s) {
+    return s.map(x => x.split('').filter((el,i,arr)=> el !== arr[i+1]).join(''))          
+               
+  };
