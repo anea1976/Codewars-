@@ -23,3 +23,7 @@ function dup(s) {
     return s.map(x => x.split('').filter((el,i,arr)=> el !== arr[i+1]).join(''))          
                
   };
+//   2)
+
+const dup = s =>
+  s.map(val => val.replace(/(.)\1+/g, `$1`));
