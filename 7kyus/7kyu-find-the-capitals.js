@@ -15,3 +15,9 @@
 // capital(mixed_capitals)[1] // returns "The capital of Spain is Madrid"
 // FUNDAMENTALS HASHES DATA STRUCTURES
 
+// SOLUTIONS
+//1)
+function capital(capitals){
+  return capitals.map(el=> `The capital of ${el.state || el.country} is ${el.capital}`)
+}
+
