@@ -21,3 +21,5 @@ function capital(capitals){
   return capitals.map(el=> `The capital of ${el.state || el.country} is ${el.capital}`)
 }
 
+//2)
+capital=a=>a.map(o=>"The capital of "+Object.values(o).join` is `)
