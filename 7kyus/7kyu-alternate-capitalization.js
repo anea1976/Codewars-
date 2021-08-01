@@ -14,3 +14,15 @@
 
 // Even-odd disparity
 
+// SOLUTION
+//1)
+function capitalize(s){
+  
+  let wordArr = s.split('')
+ let  evenIdxCaps = wordArr.map((el,idx)=> idx% 2 ===0? el.toUpperCase(): el).join('');
+   let  oddIdxCaps = wordArr.map((x,idx)=> idx% 2 !==0? x.toUpperCase(): x).join('');
+  
+ return [evenIdxCaps, oddIdxCaps]
+};
+
+
