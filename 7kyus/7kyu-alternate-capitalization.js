@@ -32,4 +32,11 @@ function capitalize(s){
   return [[...s].map((x,i) => i % 2 == 0 ? x.toUpperCase() : x).join(''),
           [...s].map((x,i) => i % 2 != 0 ? x.toUpperCase() : x).join('')]
 }
-
+//3)
+function capitalize(s) {
+  return s.split('').reduce((acc, val, i) => {
+      acc[0] += i % 2 === 0 ? val.toUpperCase() : val.toLowerCase();
+      acc[1] += i % 2 === 0 ? val.toLowerCase() : val.toUpperCase();
+      return acc;
+  }, ['', '']);
+};
