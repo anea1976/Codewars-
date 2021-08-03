@@ -29,3 +29,10 @@ var capitals = function (word) {
   }, []);
 };
 
+// 4)
+var capitals = function (word) {
+  return word.split('').reduce(function(acc, curr, i) {
+    if (curr.toUpperCase() === curr) acc.push(i);
+    return acc;
+  }, []);
+};
