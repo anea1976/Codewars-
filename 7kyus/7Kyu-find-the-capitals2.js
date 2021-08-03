@@ -5,3 +5,10 @@
 // Example
 // Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 
+// SOLUTIONS
+//1)
+var capitals = function (word) {
+  return word.split('').map((el,i)=>el===el.toUpperCase()? i: '').filter(x => Number.isInteger(x))
+};
+
+// OTHERS
