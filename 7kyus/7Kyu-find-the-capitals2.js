@@ -21,3 +21,11 @@ var capitals = function (word) {
   return caps;
 };
 
+// 3)
+
+var capitals = function (word) {
+  return word.split('').reduce(function(n, l, i){
+    return /[A-Z]/.test(l) && n.push(i), n;
+  }, []);
+};
+
