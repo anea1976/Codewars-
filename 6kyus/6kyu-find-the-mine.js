@@ -11,3 +11,12 @@
 // mineLocation( [ [0, 0, 0], [0, 1, 0], [0, 0, 0] ] ) => returns [1, 1]
 // mineLocation( [ [0, 0, 0], [0, 0, 0], [0, 1, 0] ] ) => returns [2, 1]
 
+// SOLUTIONS:
+
+function mineLocation(field){
+  let mineArray = field.filter((x,i)=> x.includes(1))  
+  let mineIndex = field.map(el=> el.indexOf(1)).filter(el=>el!== -1)
+  
+  return [field.indexOf(...mineArray), ...mineIndex]
+}
+
