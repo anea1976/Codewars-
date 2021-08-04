@@ -31,3 +31,5 @@ function mineLocation(field){
   }
 }
 
+//3)
+const mineLocation=(field,tmp)=>field.map((x,i)=>[i,x.findIndex(x=>x==1)]).filter(x=>x[1]!=-1)[0];
