@@ -27,4 +27,12 @@ var gimme = function (inputArray) {
         
      };
   
- 
+  //    OTHERS
+  //3)
+  var gimme = function (inputArray) {
+    var order = inputArray.slice().sort(function(a,b) { return a-b;});
+    return inputArray.indexOf(order[1]);
+     
+   };
+
+   
