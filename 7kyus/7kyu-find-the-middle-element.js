@@ -21,4 +21,10 @@ var gimme = function (inputArray) {
         x > arr[i+1] && x < arr[i+2] || x < arr[i+1] && x > arr[i+2] || x < arr[i-1] && x > arr[i+1] || x > arr[i-1] && x < arr[i+1] || x > arr[i-2] && x < arr[i-1]||x < arr[i-2] && x > arr[i-1] )
      return inputArray.indexOf(+middleOne.join())
   }
+  //2)
+  var gimme = function (inputArray) {
+      return inputArray.indexOf(+inputArray.filter(x=> x !== Math.max(...inputArray) && x !== Math.min(...inputArray) ).join())
+        
+     };
   
+ 
