@@ -34,5 +34,11 @@ var gimme = function (inputArray) {
     return inputArray.indexOf(order[1]);
      
    };
-
+ //4
+ var gimme = function (inputArray) {
+  let copy = [...inputArray].sort((a, b) => a - b);
+  const match = inputArray.findIndex (num => 
+    copy[1] === num)
+  return match
+};
    
