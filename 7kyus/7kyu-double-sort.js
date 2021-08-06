@@ -6,3 +6,12 @@
 
 // Note that numbers written as strings are strings and must be sorted with the other strings.
 
+//SOLUTIONS:
+//1)
+function dbSort(a){
+  let numberSort = a.filter(el=> typeof el === 'number').sort((a,b)=> a-b)
+  let stringSort= a.filter(el=> typeof el === 'string').sort()
+  return [...numberSort, ...stringSort]
+}
+
+
