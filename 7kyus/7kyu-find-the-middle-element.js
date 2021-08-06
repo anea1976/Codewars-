@@ -14,3 +14,11 @@
 // gimme([5, 10, 14]) => 1
 // 10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1.
 
+// SOLUTIONS
+// 1)
+var gimme = function (inputArray) {
+  let middleOne = inputArray.filter((x,i,arr)=> 
+        x > arr[i+1] && x < arr[i+2] || x < arr[i+1] && x > arr[i+2] || x < arr[i-1] && x > arr[i+1] || x > arr[i-1] && x < arr[i+1] || x > arr[i-2] && x < arr[i-1]||x < arr[i-2] && x > arr[i-1] )
+     return inputArray.indexOf(+middleOne.join())
+  }
+  
