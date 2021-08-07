@@ -11,3 +11,10 @@
 
 // Note: N may be 1 or less (in the latter case, the first array will be []).
 
+//SOLUTION:
+//1)
+function findDeletedNumber(arr, mixArr) {
+  return + arr.filter(el => !mixArr.includes(el)).join('')
+ }
+
+ 
