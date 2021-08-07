@@ -16,5 +16,16 @@
 function findDeletedNumber(arr, mixArr) {
   return + arr.filter(el => !mixArr.includes(el)).join('')
  }
-
+//OTHERS
+  //2)
+  function findDeletedNumber(arr, mixArr) {
+    var output = 0;
+    for(i = 0; i < arr.length; i++){
+      if(mixArr.indexOf(arr[i]) == -1){
+        output = arr[i];
+      }
+    }
+    return output;
+  }
+  
  
