@@ -20,3 +20,8 @@ function sakuraFall(v) {
   return v <= 0  ? 0: (80*5)/v
  }
 
+//2)
+function sakuraFall(v) {
+  return v < 1 ? 0 : 400 / v;
+}
+
