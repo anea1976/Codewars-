@@ -21,9 +21,9 @@ function sortArray(array) {
     return array
   }
 
-  //CLEVER SOLUTION:
+  //CLEVER SOLUTION
   
   function sortArray(array) {
-    var odd = array.filter(elem => elem % 2 !== 0).sort((a, b) => a - b);
+    let odd = array.filter(elem => elem % 2 !== 0).sort((a, b) => a - b);
     return array.map(elem => elem % 2 === 0 ? elem : odd.shift());
   }
