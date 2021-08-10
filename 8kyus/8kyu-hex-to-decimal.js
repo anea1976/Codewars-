@@ -4,6 +4,5 @@
 
 //SOLUTION
 function hexToDec(hexString){
-    return parseInt(hexString, 16)
-    
+    return parseInt(hexString, 16)    
   }
