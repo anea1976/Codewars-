@@ -13,3 +13,19 @@
 // "ABBA" -> 2 # 'A' and 'B' each occur twice
 
 // FUNDAMENTALS STRINGS
+//SOLUTION:
+//1)
+function duplicateCount(text){
+    let count = {}
+    
+    for(let letter of text.toLowerCase()){
+      if(count[letter]){
+        count[letter]++
+      }else{
+        count[letter]=1
+      }
+    }  
+  
+    return Object.values(count).filter(x=>x>1).length
+  }
+  
