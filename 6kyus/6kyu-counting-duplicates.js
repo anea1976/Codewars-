@@ -29,3 +29,22 @@ function duplicateCount(text){
     return Object.values(count).filter(x=>x>1).length
   }
   
+  //2)
+  function duplicateCount(text){
+    let count = {}
+    
+    for(let letter of text.toLowerCase()){
+      if(count[letter]){
+        count[letter]++
+      }else{
+        count[letter]=1
+      }
+    }  
+      
+    let finalCount =0
+    for (let letter in count)
+      if(count[letter] > 1){
+        finalCount++
+      }
+    return finalCount
+  }
