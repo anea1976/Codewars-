@@ -4,3 +4,7 @@
 // Your function takes as parameter the number of times the cube has been cut. You must return the number of smaller cubes created by the cuts that have at least one red face.
 
 // To make it clearer, the picture below represents the cube after (from left to right) 0, 1 and 2 cuts have been made.
+//SOLUTION
+let countSquares = function(cuts){
+  return cuts === 0 ? 1 : (6 * cuts**2) + 2
+}
