@@ -12,11 +12,18 @@
 // Good luck!
 
 //SOLUTIONS:
+//1)
 function reverseVowels(str) {
     let vowels= "aeiouAEIOU"
     let vowelsArray = str.split('').filter((x,i) => vowels.includes(x))
     return str.split('').map(y=> vowels.includes(y)? y=vowelsArray.pop(): y).join('')
     
+  }
+
+  //2)
+  function reverseVowels(str) {
+    const vowels = str.match(/[aeiou]/gi);
+    return (vowels === null) ? str : str.replace(/[aeiou]/gi, c => vowels.pop());
   }
 
 
