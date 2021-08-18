@@ -26,4 +26,7 @@ function divide(weight){
     return weight === 2 || weight % 2 !== 0  ? false: true;
   }
 
-  
+  //2)
+  function divide(weight){
+    return (weight%2==0 && weight>2) ? true : false;
+  }
