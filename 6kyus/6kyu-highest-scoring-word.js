@@ -15,3 +15,20 @@ function high(x){
  let wordScores = wordsArr.map(word => word.split("").map(letter => letter.charCodeAt()-96).reduce((a,b) => a+b))
  return wordsArr[wordScores.indexOf(Math.max(...wordScores))]
 }
+
+//OTHERS:
+function high(x){
+    
+    let wordsArr = x.split(' ');
+    let str = 'abcdefghijklmnopqrstuvwxyz';
+    
+    let newArr = wordsArr.map(function(word){
+      let sum = 0;
+      for (let i = 0; i < word.length; i++) {
+        sum += str.indexOf(word[i]);
+      }
+      return sum;
+    });
+    
+    return wordsArr[newArr.indexOf(Math.max(...newArr))];
+  }
