@@ -12,3 +12,15 @@
 // remove("Hi") === "Hi"
 // FUNDAMENTALS
 
+// SOLUTIONS:
+//1)
+function remove(s){
+    let newStr = s;
+    
+    while (newStr[newStr.length-1] === "!"){
+      
+      newStr = newStr.slice(0, -1);
+      
+    }  
+    return newStr
+  }
