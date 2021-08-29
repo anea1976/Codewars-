@@ -15,3 +15,8 @@
 
 // http://www.rubycuts.com/enum-all
 
+// SOLUTIONS:
+//1)
+function all( arr, fun ){
+  return arr.every(fun)
+}
