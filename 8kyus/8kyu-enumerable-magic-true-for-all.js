@@ -20,3 +20,7 @@
 function all( arr, fun ){
   return arr.every(fun)
 }
+//2)
+function all( arr, fun ){
+  return arr.every(el=>fun(el)) 
+}
