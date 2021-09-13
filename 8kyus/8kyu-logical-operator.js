@@ -23,5 +23,18 @@
 // A Boolean value (True or False).
 
 // SOLUTION:
+//1)
+function logicalCalc(array, op){
+  
+  if (op==="AND"){
+    return array.reduce((a,b) => a && b)
+  } else if(op === "OR"){
+     return array.reduce((a,b) => a || b)
+  }else{
+    return  array.reduce((a,b) => a !== b)
+  }
+  }
+
+
 
     
