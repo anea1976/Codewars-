@@ -35,6 +35,13 @@ function logicalCalc(array, op){
   }
   }
 
-
+//2)
+function logicalCalc(array, op){
+  switch(op){
+  case 'AND':return array.every(Boolean);
+  case 'OR':return array.some(Boolean);
+  case 'XOR':return Boolean(array.filter(Boolean).length&1);
+  }
+} 
 
     
