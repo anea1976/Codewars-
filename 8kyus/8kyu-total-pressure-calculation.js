@@ -94,3 +94,6 @@ solution= (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => {
     let gasTemp = 0.082 * (temp + 273.15)
     return (finalMass * gasTemp)/volume
   }
+
+  //2)
+  solution=(m1,m2,M1,M2,v,t)=>(M1/m1+M2/m2)*0.082*(t+273.15)/v
