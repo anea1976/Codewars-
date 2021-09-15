@@ -25,3 +25,22 @@
 // FUNDAMENTALS NUMBERS STRINGS MATHEMATICS ALGORITHMS
 
 //SOLUTION
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+    //distance = speed * time
+    //if dolphin=true, shark speed = shark speed/2
+      //output= determine if will shark get to me before I get to the pontoon
+      //Example
+      //pontoonDistance=12 (my distance from pontoon)=meSpeed(4) * time
+      //my time = pontoonDistance/meSpeed=12/4 =3seconds
+      //sharkDistance=50=sharkSpeed(8)*time
+      //shark time= 50/8=6.25seconds
+      
+      if(dolphin===true){
+        sharkSpeed/=2
+      }
+      let myTime = pontoonDistance/youSpeed
+      let sharkTime= sharkDistance/sharkSpeed
+      
+      return sharkTime > myTime ? "Alive!" :"Shark Bait!"
+    }
