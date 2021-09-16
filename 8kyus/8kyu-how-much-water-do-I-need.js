@@ -11,4 +11,16 @@
 // The answer should be rounded to the nearest 2 decimal places.
 
 // FUNDAMENTALS MATHEMATICS ALGORITHMS NUMBERS
+//SOLUTION:
+//1)
+
+function howMuchWater(water, load, clothes){
+  // Insert your brilliant code here
+  return clothes > 2 * load ? 'Too much clothes'
+  :clothes < load ? 'Not enough clothes'
+  :clothes > load? +(water * 1.1 ** (clothes-load)).toFixed(2)  
+  :water;
+  
+}
+
 
