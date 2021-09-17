@@ -25,5 +25,23 @@
 // Tortoises don't care about fractions of seconds
 // Think of calculation by hand using only integers (in your code use or simulate integer division)
 // or Google: "convert decimal time to hours minutes seconds"
+
 // FUNDAMENTALS
+
+//SOLUTION:
+// 1)
+function race(v1, v2, g) {
+  if(v1>=v2) return null
+    // your code
+  //distance = rate * time
+  //catch-up distance=g
+  // difference in speed=v2-v1
+  //time taken to catch-up= g/(v2-v1)
+  let catchUpTime = (g*3600)/(v2-v1)
+  let timeHours= +parseInt(catchUpTime/3600).toFixed(0)
+  let timeMinutes= +parseInt((catchUpTime % 3600) / 60).toFixed(0)
+  let timeSeconds= +parseInt(catchUpTime % 60).toFixed(0)
+  //return +parseInt((g/(v2-v1)))
+ return [timeHours, timeMinutes, timeSeconds]
+}
 
