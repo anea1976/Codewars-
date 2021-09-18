@@ -9,3 +9,10 @@
 //   [["name", "Jeremy"], ["age", 24], ["role", "Software Engineer"]]
 // Good Luck!
 
+// SOLUTION
+
+function convertHashToArray(hash) {
+    let arr = [];
+    Object.keys(hash).sort().map(item => arr.push([item,hash[item]]));
+    return arr;
+  }
