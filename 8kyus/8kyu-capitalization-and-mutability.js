@@ -8,3 +8,8 @@
 
 // BUGS STRINGS UTILITIES BASIC LANGUAGE FEATURES FUNDAMENTALS
 
+//SOLUTION:
+function capitalizeWord(word) {
+  let capWord = word[0].toUpperCase() + word.slice(1);
+  return capWord;
+}
