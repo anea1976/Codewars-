@@ -10,4 +10,12 @@
 // [1, 1, 1]  =>  [1]
 // []  =>  []
 // FUNDAMENTALS LISTS DATA STRUCTURES
-
+//SOLUTION:
+function twoHighest(arr) {
+    if (arr.length <=1) return arr
+    
+    let uniqueArr = [...new Set(arr)].sort((a,b) => a-b)
+   
+    
+   return [uniqueArr.pop(), uniqueArr[uniqueArr.length-1]]
+  }
