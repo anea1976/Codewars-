@@ -1,4 +1,4 @@
-// 8KYU CODEWARS - RETURN THE TWO HIGHEST
+// 8KYU CODEWARS - RETURN TWO HIGHEST VALUES IN LIST
 // INSTRUCTIONS:
 // n this kata, your job is to return the two distinct highest values in a list. If there're less than 2 unique values, return as many of them, as possible.
 
@@ -11,6 +11,7 @@
 // []  =>  []
 // FUNDAMENTALS LISTS DATA STRUCTURES
 //SOLUTION:
+// 1)
 function twoHighest(arr) {
     if (arr.length <=1) return arr
     
@@ -18,4 +19,8 @@ function twoHighest(arr) {
    
     
    return [uniqueArr.pop(), uniqueArr[uniqueArr.length-1]]
+  }
+//2)
+function twoHighest(arr) {
+    return [...new Set(arr)].sort((a, b) => b - a).slice(0, 2)
   }
