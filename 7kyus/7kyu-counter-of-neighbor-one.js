@@ -7,4 +7,4 @@
 // [1, 1, 1, 0, 1] -> [3,1]
 // [1, 1, 1, 1, 1] -> [5]
 // [0, 0, 0, 0, 0] -> []
-// FUNDAMENTALS ALGORITHMS
+// FUNDAMENTALS 
