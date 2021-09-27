@@ -11,3 +11,8 @@
 // Floats are considered UNeven for this kata.
 
 // FUNDAMENTALS NUMBERS
+//SOLUTION:
+function testEven(n) {    
+    return !Number.isInteger(n) || n % 2 !== 0 ? false : true; 
+    
+  }
