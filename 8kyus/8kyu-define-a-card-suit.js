@@ -14,7 +14,8 @@
 // ('3♠') -> return 'spades'
 // FUNDAMENTALS STRINGS BASIC LANGUAGE FEATURES
 
-//SOLUTION:
+//SOLUTIONS:
+//1)
 function defineSuit(card) {
     let cardType = card.split('').pop()
     let suits={
@@ -25,4 +26,14 @@ function defineSuit(card) {
     }
     
     return suits[cardType]
+  }
+
+  //2)
+  function defineSuit(card) {
+    return {
+      '♣' : 'clubs',
+      '♦' : 'diamonds',
+      '♥' : 'hearts',
+      '♠' : 'spades'
+    }[card.substr(-1)]
   }
