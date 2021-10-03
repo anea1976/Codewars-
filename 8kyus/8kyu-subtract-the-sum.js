@@ -122,3 +122,7 @@
 // 99-apple
 // 100-pineapple
 
+// SOLUTION
+function SubtractSum(n){
+  return "apple"// fruit name like "apple"
+}
