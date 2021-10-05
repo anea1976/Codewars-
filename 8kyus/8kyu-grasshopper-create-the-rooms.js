@@ -5,3 +5,27 @@
 
 // FUNDAMENTALS
 
+//SOLUTIONS:
+//1)
+let rooms = {
+  kitchen:{
+   name:'kitchen',
+ description:'needs to be cleaned',
+  completed : false,
+   
+ },
+    parlor:{
+      name:'parlor',
+ description:'needs to be tidied',
+  completed :true,     
+    },
+   
+   bedroom:{
+      name:'bedroom',
+ description:'needs to be swept',
+  completed :true,     
+    }
+   
+ }
+
+ 
