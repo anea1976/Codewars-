@@ -10,3 +10,9 @@
 // FUNDAMENTALS LISTS DATA STRUCTURES ARRAYS
 
 //SOLUTIONS 
+//1)
+function removeEveryOther(arr){
+  return arr.filter((_,i)=> i % 2 === 0)
+}
+
+
