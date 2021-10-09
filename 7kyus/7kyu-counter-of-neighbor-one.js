@@ -31,5 +31,23 @@ function onesCounter(input) {
     
   }
 
+  //   2)
+function onesCounter(input) {
+  const arr = [];
+  let counter = 0;
+  for(let num of input) {
+   if(num === 1) counter ++;
+   else if(counter !== 0){
+     arr.push(counter);
+     counter = 0;
+     }
+  }
+  if(counter) arr.push(counter);
+  return arr;
+}
+
+
+
+
   
   
