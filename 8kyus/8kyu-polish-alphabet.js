@@ -20,4 +20,24 @@
 // "Jędrzej Błądziński"  -->  "Jedrzej Bladzinski"
 // FUNDAMENTALS STRINGS
 
-//SOLUTIONs:
+//SOLUTIONS:
+//1)
+function correctPolishLetters (string) {
+    let hash={
+      ą:'a',
+      ć:'c',
+      ę:'e',
+      ł:'l',
+      ń:'n',
+      ó:'o',
+      ś:'s',
+      ź:'z',
+      ż:'z'
+      
+    }
+    
+    
+   return string.split('').map(letter=> hash[letter]? letter.replace(letter, hash[letter]): letter).join('')
+  }
+
+  
