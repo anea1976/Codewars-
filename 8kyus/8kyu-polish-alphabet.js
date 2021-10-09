@@ -40,4 +40,19 @@ function correctPolishLetters (string) {
    return string.split('').map(letter=> hash[letter]? letter.replace(letter, hash[letter]): letter).join('')
   }
 
-  
+  //2)
+  function correctPolishLetters (string) {
+    let letters = {ą: "a",
+  ć: "c",
+  ę: "e",
+  ł: "l",
+  ń: "n",
+  ó: "o",
+  ś: "s",
+  ź: "z",
+  ż: "z"};
+  for (let i in letters){
+    string = string.split('').map(e => e == i ? letters[i] : e).join('');
+  }
+  return string;
+  }
