@@ -8,3 +8,28 @@
 // [1, 1, 1, 1, 1] -> [5]
 // [0, 0, 0, 0, 0] -> []
 // FUNDAMENTALS 
+//SOLUTION
+function onesCounter(input) {
+    if (input.indexOf(1)===-1) return []
+    let map=[]
+    let counter=0
+       for(let i=0; i<input.length; i++){    
+      if(input[i]===1){
+        counter++;
+         }else{  
+  //           newCounter=counter
+  //        map.push(newCounter)
+           map.push(counter)
+           counter=0
+           
+      }
+     
+    }
+     
+       map.push(counter)
+    return map.filter(el=>el!==0)
+    
+  }
+
+  
+  
