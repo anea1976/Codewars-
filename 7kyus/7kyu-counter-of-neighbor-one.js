@@ -46,6 +46,11 @@ function onesCounter(input) {
   return arr;
 }
 
+//3)
+function onesCounter(input) {
+  return input.join('').split('0').filter(Number).map(e => e.length)
+}
+
 
 
 
