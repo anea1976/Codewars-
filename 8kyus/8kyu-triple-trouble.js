@@ -22,4 +22,14 @@ function tripleTrouble(one, two, three){
   
  }
 
+ //2)
+ function tripleTrouble(one, two, three){
+  let x = ''
+    for(i = 0; i<one.length; i++) {
+      x +=  one[i] + two[i] + three[i]
+    }
+  return x
+ }
+ 
+
  
