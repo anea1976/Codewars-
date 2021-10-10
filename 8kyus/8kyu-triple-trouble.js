@@ -30,6 +30,8 @@ function tripleTrouble(one, two, three){
     }
   return x
  }
+ //3)
+ const tripleTrouble = (one, two, three) => one.split("").map((letter, index) => letter + two[index] + three[index]).join("");
  
 
  
