@@ -9,3 +9,17 @@
 
 // PUZZLES
 
+//SOLUTIONS:
+//1)
+function tripleTrouble(one, two, three){
+  //Solution
+  let newArr = []
+  for(let i=0; i<one.length; i++){
+    newArr.push(one[i].concat(two[i],three[i]))
+  }
+  
+  return newArr.join('')
+  
+ }
+
+ 
