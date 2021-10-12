@@ -9,3 +9,11 @@
 // Note: Math.pow and some other Math functions like eval() and ** are disabled.
 
 // FUNDAMENTALS NUMBERS
+//SOLUTION:
+function numberToPower(number, power){
+    let newNumber=1
+    for(let i=0;i<power;i++){
+      newNumber*=number
+    }
+    return newNumber
+  }
