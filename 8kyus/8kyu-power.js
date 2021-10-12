@@ -9,7 +9,8 @@
 // Note: Math.pow and some other Math functions like eval() and ** are disabled.
 
 // FUNDAMENTALS NUMBERS
-//SOLUTION:
+//SOLUTIONS:
+//1)
 function numberToPower(number, power){
     let newNumber=1
     for(let i=0;i<power;i++){
@@ -17,3 +18,5 @@ function numberToPower(number, power){
     }
     return newNumber
   }
+  //2)
+  const numberToPower = (number,power) => power == 0 ? 1 : Array.from({length: power}, (v,i) => number).reduce((a,b) => a * b)
