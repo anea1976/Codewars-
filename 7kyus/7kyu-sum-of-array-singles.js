@@ -13,3 +13,8 @@
 // Sum of prime-indexed elements
 
 // Sum of integer combinations
+//SOLUTION:
+// 1)
+function repeats(arr){
+    return arr.filter((el,i,arr)=>arr.indexOf(el)===arr.lastIndexOf(el)).reduce((a,b)=> a+b,0)
+    };
