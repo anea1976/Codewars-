@@ -19,4 +19,6 @@
 //1)
 let solve = arr => arr.reduce((res, a) => res *= new Set(a).size, 1);
 
+//2)
 
+return arr.map(s=> new Set(s).size).reduce((a,c)=> a*c,1)
