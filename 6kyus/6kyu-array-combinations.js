@@ -16,3 +16,7 @@
 
 // Sum of array singles
 //SOLUTIONS:
+//1)
+let solve = arr => arr.reduce((res, a) => res *= new Set(a).size, 1);
+
+
