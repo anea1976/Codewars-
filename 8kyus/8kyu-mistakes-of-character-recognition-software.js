@@ -11,3 +11,19 @@
 // I is misinterpreted as 1
 // The test cases contain numbers only by mistake.
 
+// FUNDAMENTALS
+
+//SOLUTIONS:
+
+//1)
+function correct(string){
+  let correctChars ={
+    5:"S",
+    0:"O",
+    1:"I"
+  }
+  
+  return string.split('').map(char => correctChars[char]? correctChars[char]: char).join('')
+ }
+
+ 
