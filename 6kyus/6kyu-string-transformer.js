@@ -11,6 +11,18 @@
 // You may assume the input only contain English alphabet and spaces.
 
 
-
+// SOLUTIONS:
+//1)
+function stringTransformer(str) {
+  return str
+    .split(' ')
+    .reverse()
+    .join(' ')
+    .split('')
+    .map(v => v == v.toUpperCase() ?
+      v.toLowerCase() :
+      v.toUpperCase())
+    .join('');
+}
 
 
