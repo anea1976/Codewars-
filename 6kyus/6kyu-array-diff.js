@@ -9,13 +9,22 @@
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 // SOLUTION:
+//1)
 
 function arrayDiff(a, b) {
     return a.filter(x => !b.includes(x))
   }
 
+  //2)
+
   //ANOTHER SOLUTION:
   function array_diff(a, b) {
     b = new Set(b)
     return a.filter(v => !b.has(v))
+  }
+
+  //3)
+
+  function findDeletedNumber(arr, mixArr) {
+    return arr.filter(v=>mixArr.indexOf(v)==-1)[0]||0
   }
