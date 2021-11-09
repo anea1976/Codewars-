@@ -10,5 +10,15 @@
 
 // FUNDAMENTALS LOOPS CONTROL FLOWBASIC LANGUAGE FEATURES
 
+// SOLUTION:
+//1)
+function doubleChar(str) {
+  let newStr= ''
+  for (let i=0; i<str.length; i++){
+    newStr += str[i].repeat(2)
+  }
+  return newStr
+}
+
 
   
