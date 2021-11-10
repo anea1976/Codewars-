@@ -13,3 +13,21 @@
 // "123abc!" is a valid word because all of the characters only appear once in the word.
 
 // ALGORITHMS STRINGS BASIC LANGUAGE FEATURES FUNDAMENTALS
+
+// SOLUTION:
+//1)
+function validateWord(s)
+{
+  let hash = {}
+  let newStr = s.toLowerCase()
+  
+  for (let char of newStr ){
+   if(hash[char]){
+     hash[char]++
+   } else{
+     hash[char] = 1
+   }
+      
+  }
+  return Object.values(hash).every((el,i,arr)=> el === arr[0])
+}
