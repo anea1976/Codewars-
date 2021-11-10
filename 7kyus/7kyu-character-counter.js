@@ -31,3 +31,14 @@ function validateWord(s)
   }
   return Object.values(hash).every((el,i,arr)=> el === arr[0])
 }
+//2)
+function validateWord(s){
+    let str = s.toLowerCase();
+    let arr = str.split('');
+    let arr1 = [];
+    for (let i = 0; i < arr.length; i++){
+      let arr2 = arr.filter(j => j === arr[i]);
+     arr1.push(arr2.length); 
+    }
+    return arr1.every(el => arr1[0] === el);
+  }
