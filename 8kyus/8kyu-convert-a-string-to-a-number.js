@@ -14,3 +14,8 @@
 // "-7" --> -7
 // FUNDAMENTALS PARSING ALGORITHMS STRINGS
 
+//SOLUTION:
+var stringToNumber = function(str){
+  
+  return +str ;
+}
