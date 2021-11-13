@@ -41,4 +41,14 @@ var gimme = function (inputArray) {
     copy[1] === num)
   return match
 };
+
+//5)
+
+function middleElementIndex(arr){
+  return arr.indexOf([...arr].sort((a,b) => a-b)[1])
+}
+//time complexity
+//sort = n log n
+//get the first index =n
+//total time complexity=  n* n log n
    
