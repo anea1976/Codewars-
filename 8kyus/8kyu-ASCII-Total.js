@@ -17,4 +17,12 @@ function uniTotal(str)
 
 }
 
+//2)
+function uniTotal(str) {
+    let total = 0;
+    for (var i = 0; i < str.length; i++) {
+      total += str.charCodeAt(i);
+    }
+    return total;
+  }
 
