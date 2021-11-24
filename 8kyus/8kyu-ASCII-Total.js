@@ -7,6 +7,14 @@
 // uniTotal("a") == 97 uniTotal("aaa") == 291
 
 // FUNDAMENTALS
+// SOLUTION:
+//1)
+function uniTotal(str)
+{
+  
+  return str.split('').reduce((acc,curr) => acc+curr.charCodeAt(0),0)
+  
 
+}
 
 
