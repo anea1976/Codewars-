@@ -17,5 +17,8 @@ var findInArray = function(array, iterator) {
     return array.map(iterator).indexOf(true);
   };
 
-
+//2)
+var findInArray = function(array, iterator) {
+    return array.indexOf(array.find(iterator));
+  };
   
