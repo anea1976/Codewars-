@@ -22,3 +22,15 @@ function extractIds(data){
     }))
 }
 
+//2)
+function extractIds(data, ids = []){
+  let search = (item) => {
+    for(var key in item){
+      if(key == 'id')
+        ids.push(item[key]);
+      if(typeof item[key] === 'object')
+        search(item[key]);      
+    }
+  };
+  return search(data), ids;
+}
