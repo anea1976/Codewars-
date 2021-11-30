@@ -15,3 +15,10 @@
 
 // extractIds(data) // should return [1,2,3,4,5]
  //SOLUTIONS:
+//1)
+function extractIds(data){
+  return [].concat(...Object.keys(data).map(function (element) {
+      return element === 'id' ? data[element] : extractIds(data[element]);
+    }))
+}
+
