@@ -7,3 +7,10 @@
 // ["C", "d", "a", "B"])              -->  ["a", "B", "C", "d"]
 // FUNDAMENTALS ARRAYS SORTING ALGORITHMS
 
+//SOLUTIONS 
+//1)
+sortme = function( names ){
+  return names.sort(function (a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+});
+}
