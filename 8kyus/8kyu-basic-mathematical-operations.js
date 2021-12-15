@@ -11,3 +11,14 @@
 // ('*', 5, 5) --> 25
 // ('/', 49, 7) --> 7
 
+// SOLUTIONS:
+//1)
+function basicOp(operation, value1, value2){
+    return operation === '+'? value1 + value2
+         : operation === '-'? value1 - value2
+         : operation === '*'? value1 * value2
+         : value1 / value2;      
+  
+  }
+
+  
