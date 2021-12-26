@@ -30,3 +30,9 @@ function betterThanAverage(classPoints, yourPoints) {
 	classAvg = classAvg / classPoints.length;
 	return yourPoints > classAvg;
 }
+
+//3)
+const betterThanAverage = (classPoints, yourPoints) =>
+	yourPoints >
+	classPoints.reduce((pre, val) => pre + val, yourPoints) /
+		(classPoints.length + 1);
