@@ -23,3 +23,9 @@ function array(arr) {
 	let newStr = arr.split(",").slice(1, -1).join(" ");
 	return newStr.length < 1 ? null : newStr;
 }
+
+//2)
+
+function array(arr) {
+	return arr.split(",").slice(1, -1).join(" ") || null;
+}
